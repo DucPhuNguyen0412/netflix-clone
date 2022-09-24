@@ -1,11 +1,11 @@
 from django.urls import path
-from core.views import Home,ProfileList
+from core.views import Home,ProfileList,ProfileCreate
 
 
 app_name = 'core'
 
 urlpatterns = [
     path('', Home.as_view()),
-    path('profile/', ProfileList.as_view(), name='profile_list')
-
+    path('profile/', ProfileList.as_view(), name='profile_list'),
+    path('profile/create', ProfileCreate.as_view(), name='profile_create'),
 ]
