@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'core', 
-    
-    #third party apps
+    'core',
+
+    # thir party apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -58,7 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'django_netflix.urls'
 
-TEMPLATES = [ #for the template folder
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
@@ -135,7 +135,7 @@ STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]
 
-#Auth settings
+# Auth stting
 AUTH_USER_MODEL='core.CustomUser'
 
 AUTHENTICATION_BACKENDS = [
@@ -148,7 +148,8 @@ AUTHENTICATION_BACKENDS = [
   
 ]
 
-SITE_ID = 1
+SITE_ID=1
+
 
 ACCOUNT_AUTHENTICATION_METHOD='email'
 ACCOUNT_EMAIL_REQUIRED=True
